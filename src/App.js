@@ -7,6 +7,7 @@ import Expo from 'expo'
 
 import Home from './views/Home'
 import FooterTabs from './views/FooterTabs'
+import HeaderTabs from './views/HeaderTabs'
 
 const App = ({ loaded }) => (
   <NativeRouter>
@@ -14,6 +15,7 @@ const App = ({ loaded }) => (
       <View style={{ flex: 1 }}>
         <Route exact path="/" component={Home} />
         <Route exact path="/footerTabs" component={FooterTabs} />
+        <Route exact path="/headerTabs" component={HeaderTabs} />
       </View>
     ) : (
       <View />

@@ -26,6 +26,9 @@ const Home = () => (
         <Link to="/footerTabs">
           <Text>Footer Tabs Example</Text>
         </Link>
+        <Link to="/headerTabs">
+          <Text>HeaderTabs Example</Text>
+        </Link>
       </View>
     </Content>
   </Container>

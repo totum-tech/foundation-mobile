@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-native'
+import PropTypes from 'prop-types'
 import { StyleSheet, View } from 'react-native'
 import {
   Icon,
@@ -60,5 +60,11 @@ const Home = ({ history }) => (
     </Footer>
   </Container>
 )
+
+Home.propTypes = {
+  history: PropTypes.shape({
+    goBack: PropTypes.func.isRequired,
+  }).isRequired,
+}
 
 export default Home
