@@ -3,10 +3,10 @@
 
 ## Features
 > All the things `create-react-native-app` provides, plus
-- [ ] Linting
-- [ ] Prettier
+- Linting
 
 ## Roadmap
+- [ ] Prettier
 - [ ] Routing
 - [ ] State Management
 - [ ] LocalStorage persistence
