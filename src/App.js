@@ -1,5 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
+import { NativeRouter, Route } from 'react-router-native'
 
 const styles = StyleSheet.create({
   container: {
@@ -10,12 +11,24 @@ const styles = StyleSheet.create({
   },
 })
 
-const App = () => (
+const Home = () => (
   <View style={styles.container}>
     <Text>Open up App.js to start working on your app!</Text>
     <Text>Changes you make will automatically reload.</Text>
     <Text>Shake your phone to open the developer menu.</Text>
   </View>
+)
+
+const App = () => (
+  <NativeRouter>
+    <View style={styles.container}>
+      <Route
+        exact
+        path="/"
+        component={Home}
+      />
+    </View>
+  </NativeRouter>
 )
 
 export default App

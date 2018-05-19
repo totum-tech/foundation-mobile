@@ -8,9 +8,9 @@
 
 ## Roadmap
 - [ ] Routing
+- [ ] Component Library
 - [ ] State Management
 - [ ] LocalStorage persistence
 - [ ] Push Notifications
 - [ ] Splash Screen
-- [ ] Component Library
 - [ ] Analytics
