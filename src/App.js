@@ -1,47 +1,29 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { compose, lifecycle, withStateHandlers } from 'recompose'
-import { StyleSheet, Text, View } from 'react-native'
-import { Header, Container, Left, Right, Title, Body } from 'native-base'
+import { View } from 'react-native'
 import { NativeRouter, Route } from 'react-router-native'
 import Expo from 'expo'
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-})
-
-const Home = () => (
-  <View style={styles.container}>
-    <Text>Open up App.js to start working on your app!</Text>
-    <Text>Changes you make will automatically reload.</Text>
-    <Text>Shake your phone to open the developer menu.</Text>
-  </View>
-)
+import Home from './views/Home'
+import FooterTabs from './views/FooterTabs'
 
 const App = ({ loaded }) => (
   <NativeRouter>
     {loaded ? (
-      <Container>
-        <Header>
-          <Left />
-          <Body>
-            <Title>Foundation</Title>
-          </Body>
-          <Right />
-        </Header>
-        <Body>
-          <Route exact path="/" component={Home} />
-        </Body>
-      </Container>
+      <View style={{ flex: 1 }}>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/footerTabs" component={FooterTabs} />
+      </View>
     ) : (
       <View />
     )}
   </NativeRouter>
 )
+
+App.propTypes = {
+  loaded: PropTypes.bool.isRequired,
+}
 
 export default compose(
   withStateHandlers({ loaded: false }, { setLoaded: () => loaded => ({ loaded }) }),
