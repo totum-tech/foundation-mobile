@@ -8,6 +8,7 @@ import Expo from 'expo'
 import Home from './views/Home'
 import FooterTabs from './views/FooterTabs'
 import HeaderTabs from './views/HeaderTabs'
+import Drawer from './views/Drawer'
 
 const App = ({ loaded }) => (
   <NativeRouter>
@@ -16,6 +17,7 @@ const App = ({ loaded }) => (
         <Route exact path="/" component={Home} />
         <Route exact path="/footerTabs" component={FooterTabs} />
         <Route exact path="/headerTabs" component={HeaderTabs} />
+        <Route exact path="/drawer" component={Drawer} />
       </View>
     ) : (
       <View />

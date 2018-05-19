@@ -29,6 +29,9 @@ const Home = () => (
         <Link to="/headerTabs">
           <Text>HeaderTabs Example</Text>
         </Link>
+        <Link to="/drawer">
+          <Text>Drawer Example</Text>
+        </Link>
       </View>
     </Content>
   </Container>
