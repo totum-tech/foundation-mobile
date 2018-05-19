@@ -1,5 +1,5 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+import { StyleSheet, Text, View } from 'react-native'
 
 const styles = StyleSheet.create({
   container: {
@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+})
 
 const App = () => (
   <View style={styles.container}>
@@ -16,6 +16,6 @@ const App = () => (
     <Text>Changes you make will automatically reload.</Text>
     <Text>Shake your phone to open the developer menu.</Text>
   </View>
-);
+)
 
-export default App;
+export default App

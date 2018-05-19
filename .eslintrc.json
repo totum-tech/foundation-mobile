@@ -8,8 +8,9 @@
       "react/jsx-filename-extension": [
         1,
         { "extensions": [".js", ".jsx"] }
-      ]
+      ],
+      "semi": [2, "never"]
     },
-    "parser": "babel-eslint", 
+    "parser": "babel-eslint",
     "extends": "airbnb"
 }
