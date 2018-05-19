@@ -6,9 +6,9 @@
 - Linting
 - Prettier
 - Routing
+- Default component library, with common layouts
 
 ## Roadmap
-- [ ] Default component library, with common layouts
 - [ ] State Management
 - [ ] LocalStorage persistence
 - [ ] Push Notifications
