@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-native'
 import { StyleSheet, View } from 'react-native'
 import {
+  Icon,
   Header,
   Container,
   Left,
@@ -24,10 +25,14 @@ const styles = StyleSheet.create({
   },
 })
 
-const Home = () => (
+const Home = ({ history }) => (
   <Container>
     <Header>
-      <Left />
+      <Left>
+        <Button transparent onPress={history.goBack}>
+          <Icon name="arrow-back" />
+        </Button>
+      </Left>
       <Body>
         <Title>Foundation</Title>
       </Body>
@@ -38,9 +43,6 @@ const Home = () => (
         <Text>Open up App.js to start working on your app!</Text>
         <Text>Changes you make will automatically reload.</Text>
         <Text>Shake your phone to open the developer menu.</Text>
-        <Link to="/">
-          <Text>Home</Text>
-        </Link>
       </View>
     </Content>
     <Footer>
