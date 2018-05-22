@@ -10,7 +10,6 @@
 - State Management
 
 ## Roadmap
-- [ ] LocalStorage persistence
 - [ ] Push Notifications
 - [ ] Splash Screen
 - [ ] Analytics
