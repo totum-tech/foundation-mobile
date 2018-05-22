@@ -1,7 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-native'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
 import { StyleSheet, Text, View } from 'react-native'
 import { Header, Container, Left, Right, Title, Body, Content } from 'native-base'
+import { compose, lifecycle } from 'recompose'
+import appModule from '../modules/app'
 
 const styles = StyleSheet.create({
   container: {
@@ -37,4 +41,11 @@ const Home = () => (
   </Container>
 )
 
-export default Home
+export default compose(
+  connect(s => s, dispatch => ({ actions: bindActionCreators(appModule.actions, dispatch) })),
+  lifecycle({
+    componentDidMount() {
+      this.props.actions.init()
+    },
+  }),
+)(Home)
