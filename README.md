@@ -7,9 +7,9 @@
 - Prettier
 - Routing
 - Default component library, with common layouts
+- State Management
 
 ## Roadmap
-- [ ] State Management
 - [ ] LocalStorage persistence
 - [ ] Push Notifications
 - [ ] Splash Screen
