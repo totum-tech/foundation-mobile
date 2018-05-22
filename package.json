@@ -34,12 +34,18 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^6.3.1",
+    "es6-symbol": "^3.1.1",
     "expo": "^27.0.1",
     "native-base": "^2.4.5",
     "prop-types": "^15.6.1",
     "react": "16.3.1",
     "react-native": "~0.55.2",
+    "react-redux": "^5.0.7",
     "react-router-native": "^4.2.0",
-    "recompose": "^0.27.0"
+    "recompose": "^0.27.0",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-loop": "^4.3.3",
+    "redux-modules": "^1.1.0"
   }
 }
